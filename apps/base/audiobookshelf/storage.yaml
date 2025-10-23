@@ -8,6 +8,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
+  storageClassName: local-storage
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -19,6 +20,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
+  storageClassName: local-storage
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -30,3 +32,4 @@ spec:
   resources:
     requests:
       storage: 1Gi
+  storageClassName: local-storage
