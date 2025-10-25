@@ -4,10 +4,10 @@ metadata:
   name: mealie-configmap
 data:
   PORT: "9000"
-  SMTP_HOST: smtp.mail.me.com
+  SMTP_HOST: "smtp.mail.me.com"
   SMTP_PORT: 587
   SMTP_FROM_NAME: Kevin
   SMTP_AUTH_STRATEGY: TLS
-  SMTP_FROM_EMAIL: kevin@kevin-morris.net
-  SMTP_USER: kevinmorrisone@icloud.com
-  SMTP_PASSWORD: wujp-krqr-vbpy-dnit
+  SMTP_FROM_EMAIL: "kevin@kevin-morris.net"
+  SMTP_USER: "kevinmorrisone@icloud.com"
+  SMTP_PASSWORD: "wujp-krqr-vbpy-dnit"
