@@ -8,6 +8,6 @@ data:
   SMTP_PORT: "587"
   SMTP_FROM_NAME: "Kevin"
   SMTP_AUTH_STRATEGY: "TLS"
-  SMTP_FROM_EMAIL: "kevin@kevin-morris.net"
+  SMTP_FROM_EMAIL: "kevink8s@icloud.com"
   SMTP_USER: "kevinmorrisone@icloud.com"
   SMTP_PASSWORD: "wujp-krqr-vbpy-dnit"
