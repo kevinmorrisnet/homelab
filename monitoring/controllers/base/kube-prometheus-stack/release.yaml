@@ -33,27 +33,25 @@ spec:
     grafana:
       adminPassword: kevin
       ingress:
-          ## If true, Grafana Ingress will be created
-          ##
-          enabled: true
+        ## If true, Grafana Ingress will be created
+        ##
+        enabled: true
 
-          ## IngressClassName for Grafana Ingress.
-          ## Should be provided if Ingress is enable.
-          ##
-          ingressClassName: traefik
+        ## IngressClassName for Grafana Ingress.
+        ## Should be provided if Ingress is enable.
+        ##
+        ingressClassName: traefik
 
-          ## Hostnames.
-          ## Must be provided if Ingress is enable.
-          ##
-          hosts:
-            - grafana.kevin-morris.net
+        ## Hostnames.
+        ## Must be provided if Ingress is enable.
+        ##
+        hosts:
+          - grafana.kevin-morris.net
 
-          ## TLS configuration for grafana Ingress
-          ## Secret must be manually created in the namespace
-          ##
-          tls:
-            - secretName: grafana-tls-secret
-              hosts:
-                - grafana.kevin-morris.net
-
-
+        ## TLS configuration for grafana Ingress
+        ## Secret must be manually created in the namespace
+        ##
+        tls: []
+        #  - secretName: grafana-tls-secret
+        #    hosts:
+        #      - grafana.kevin-morris.net
