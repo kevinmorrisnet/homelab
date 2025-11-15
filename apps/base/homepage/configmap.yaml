@@ -2,17 +2,15 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: homepage
-  namespace: homepage
   labels:
     app.kubernetes.io/name: homepage
 data:
   kubernetes.yaml: |
     mode: cluster
+    ingress: true # default, enable ingress
+    traefik: true # enable traefik ingressRoute
+    gateway: true # enable gateway-api
   settings.yaml: ""
-  #settings.yaml: |
-  #  providers:
-  #    longhorn:
-  #      url: https://longhorn.my.network
   custom.css: ""
   custom.js: ""
   bookmarks.yaml: |
@@ -25,22 +23,45 @@ data:
         - Mealie:
             href: http://mealie.kevin-morris.net
             icon: mealie.png
+            description: Recipes
+
         - Grafana:
             href: http://grafana.kevin-morris.net
             icon: grafana.png
+            description: Monitoring
+
         - Linkding:
             href: http://linkding.kevin-morris.net
             icon: linkding.png
+            description: Bookmarks
 
-    - My Second Group:
-        - My Second Service:
-            href: http://localhost/
-            description: Homepage is the best
+    - Consuming:
+        - Hacker News:
+            href: https://news.ycombinator.com
+            icon: hacker-news.png
+            description: Hacker News
 
-    - My Third Group:
-        - My Third Service:
-            href: http://localhost/
-            description: Homepage is 😎
+        - LinkedIn:
+            href: https://www.linkedin.com/feed/
+            icon: linkedin.png
+            description: LinkedIn
+
+        - X:
+            href: https://x.com/home
+            icon: x.png
+            description: X
+
+    - Learning:
+        - Kubernetes:
+            href: http://kubernetes.io/docs/home
+            icon: kubernetes.png
+            description: Kubernetes
+
+        - Skool:
+            href: https://www.skool.com/kubecraft/classroom
+            icon: google-scholar.png
+            description: Skool
+
   widgets.yaml: |
     - kubernetes:
         cluster:
@@ -63,14 +84,4 @@ data:
     - search:
         provider: duckduckgo
         target: _blank
-    - openweathermap:
-        label: Kyiv #optional
-        latitude: 50.449684
-        longitude: 30.525026
-        units: metric # or imperial
-        provider: openweathermap
-        apiKey: youropenweathermapkey # required only if not using provider, this reveals api key in requests
-        cache: 5 # Time in minutes to cache API responses, to stay within limits
-        format: # optional, Intl.NumberFormat options
-          maximumFractionDigits: 1
   docker.yaml: ""
