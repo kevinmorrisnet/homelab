@@ -41,6 +41,12 @@ data:
             icon: hacker-news.png
             description: Hacker News
 
+        - YouTube:
+            href: https://www.youtube.com/
+            icon: youtube.png
+            description: YouTube
+
+    - Creating:
         - LinkedIn:
             href: https://www.linkedin.com/feed/
             icon: linkedin.png
@@ -50,11 +56,6 @@ data:
             href: https://x.com/home
             icon: x.png
             description: X
-
-        - YouTube:
-            href: https://www.youtube.com/
-            icon: youtube.png
-            description: YouTube
 
     - Learning:
         - Kubernetes:
@@ -74,7 +75,7 @@ data:
           cpu: true
           memory: true
           showLabel: true
-          label: "cluster"
+          label: "Careus"
         nodes:
           show: true
           cpu: true
