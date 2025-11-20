@@ -34,6 +34,11 @@ data:
             href: http://linkding.kevin-morris.net
             icon: linkding.png
             description: Bookmarks
+        
+        - Audiobookshelf:
+            href: http://audiobooks.kevin-morris.net
+            icon: audiobookshelf.png
+            description: Audiobookshelf
 
     - Consuming:
         - Hacker News:
