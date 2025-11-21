@@ -94,21 +94,15 @@ data:
         expanded: true
         cpu: true
         memory: true
-        network: default
         cputemp: true
+        network: default
         #tempmin: 0 # optional, minimum cpu temp
         #tempmax: 100 # optional, maximum cpu temp
         uptime: true
-        units: imperial # only used by cpu temp, options: 'imperial' or 'metric'
+        units: metric # only used by cpu temp, options: 'imperial' or 'metric'
         refresh: 3000 # optional, in ms
-
-    - resources:
-        label: Storage
-        disk: /mnt/p1
-        diskUnits: bytes # optional, bytes (default) or bbytes. Only applies to disk
-
     - search:
-        provider: duckduckgo
+        provider: brave
         target: _blank
     - openweathermap:
         label: Morrisville #optional
@@ -119,8 +113,5 @@ data:
         apiKey: e172ad44cf206c004ba7f8e04557d12d # required only if not using provider, this reveals api key in requests
         cache: 5 # Time in minutes to cache API responses, to stay within limits
         format: # optional, Intl.NumberFormat options
-          maximumFractionDigits: 0
-    - greeting:
-        text_size: xl
-        text: Welcome to Homepage!
+        maximumFractionDigits: 0
   docker.yaml: ""
