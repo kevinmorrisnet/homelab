@@ -10,7 +10,10 @@ data:
     ingress: true # default, enable ingress
     traefik: true # enable traefik ingressRoute
     gateway: true # enable gateway-api
-  settings.yaml: ""
+  settings.yaml: |
+    title: My Awesome Homepage
+    theme: dark # or light
+    color: zinc
   custom.css: ""
   custom.js: ""
   bookmarks.yaml: |
@@ -92,23 +95,12 @@ data:
         cpu: true
         memory: true
         network: default
-
-    - resources:
-        label: System
-        cpu: true
-        memory: true
-
-    - resources:
-        label: Specs
         cputemp: true
         #tempmin: 0 # optional, minimum cpu temp
         #tempmax: 100 # optional, maximum cpu temp
         uptime: true
         units: imperial # only used by cpu temp, options: 'imperial' or 'metric'
         refresh: 3000 # optional, in ms
-
-    - resources:
-        network: true # optional, uses 'default' if true or specify a network interface name
 
     - resources:
         label: Storage
