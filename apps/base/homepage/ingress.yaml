@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: "homepage.kevin-morris.net"
+    - host: "192.168.1.201"
       http:
         paths:
           - path: "/"
