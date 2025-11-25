@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: "kevin.homepage.net"
+    - host: "kevinhomepage.net"
       http:
         paths:
           - path: "/"
