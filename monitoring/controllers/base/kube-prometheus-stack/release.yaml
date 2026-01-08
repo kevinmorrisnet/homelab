@@ -55,10 +55,10 @@ spec:
           - secretName: grafana-tls-secret
             hosts:
               - grafana.kevin-morris.net
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "64Mi"
-            cpu: "500m"
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "64Mi"
+          cpu: "500m"
