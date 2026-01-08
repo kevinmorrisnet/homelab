@@ -13,6 +13,14 @@ spec:
       # version: "66.2.2"
       # version: "58.x"
 
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+
       sourceRef:
         kind: HelmRepository
         name: kube-prometheus-stack
