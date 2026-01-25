@@ -42,11 +42,14 @@ data:
             icon: audiobookshelf.png
             description: Audiobookshelf
 
-        - widget:
-            type: pihole
-            url: http:/192.168.1.150
-            version: 6 # required if running v6 or higher, defaults to 5
-            key: # optional, in v6 can be your password or app password
+        - Pihole:
+            icon: pi-hole.png
+            href: http://192.168.1.150/admin  # Optional: direct link to admin panel
+            widget:
+                type: pihole
+                url: http://192.168.1.150       # Replace with your Pi-hole IP or domain
+                version: 6                     # Required if running Pi-hole v6 or higher
+                key: # Use your API key (from Expert mode) or web UI password   
 
     - Consuming:
         - Hacker News:
@@ -116,8 +119,7 @@ data:
         longitude: -78.82556
         units: imperial # or metric
         provider: openweathermap
-        apiKey: e172ad44cf206c004ba7f8e04557d12d # required only if not using provider, this reveals api key in requests
-        cache: 5 # Time in minutes to cache API responses, to stay within limits
+        apiKey: e172ad44cf206c004ba7f8e04555 # Time in minutes to cache API responses, to stay within limits
         format: # optional, Intl.NumberFormat options
         maximumFractionDigits: 0
   docker.yaml: ""
