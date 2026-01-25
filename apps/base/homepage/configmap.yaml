@@ -42,6 +42,12 @@ data:
             icon: audiobookshelf.png
             description: Audiobookshelf
 
+        - widget:
+            type: pihole
+            url: http:/192.168.1.150
+            version: 6 # required if running v6 or higher, defaults to 5
+            key: # optional, in v6 can be your password or app password
+
     - Consuming:
         - Hacker News:
             href: https://news.ycombinator.com
@@ -52,6 +58,7 @@ data:
             href: https://www.youtube.com/
             icon: youtube.png
             description: YouTube
+
 
     - Creating:
         - LinkedIn:
