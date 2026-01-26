@@ -42,14 +42,6 @@ data:
             icon: audiobookshelf.png
             description: Audiobookshelf
 
-        - Pihole:
-            icon: pi-hole.png
-            href: http://192.168.1.150/admin  # Optional: direct link to admin panel
-            widget:
-                type: pihole
-                url: http://192.168.1.150       # Replace with your Pi-hole IP or domain
-                version: 6                     # Required if running Pi-hole v6 or higher
-                key: xnCvK3SUwGur3nUmFnPQTBEFGhLrIhv+hoH9mK5X+Sk=
     - Consuming:
         - Hacker News:
             href: https://news.ycombinator.com
