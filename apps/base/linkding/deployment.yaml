@@ -13,9 +13,9 @@ spec:
         app: linkding
     spec:
       securityContext:
-        fsGroup: 82
-        runAsUser: 82
-        runAsGroup: 82
+        fsGroup: 33
+        runAsUser: 33
+        runAsGroup: 33
 
       containers:
         - name: linkding
