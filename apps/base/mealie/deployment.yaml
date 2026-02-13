@@ -17,21 +17,21 @@ spec:
         runAsUser: 911
         runAsGroup: 911
       containers:
-        - name: mealie
-          image: ghcr.io/mealie-recipes/mealie:v3.10.2
-          envFrom:
-            - configMapRef:
-                name: mealie-configmap
-            - secretRef:
-                name: mealie-container-env
-          ports:
-            - containerPort: 9000
-              protocol: TCP
-          volumeMounts:
-            - mountPath: /app/data
-              name: mealie-data
+      - name: mealie
+        image: ghcr.io/mealie-recipes/mealie:v3.10.2
+        envFrom:
+        - configMapRef:
+          name: mealie-configmap
+        - secretRef:
+          name: mealie-container-env
+        ports:
+        - containerPort: 9000
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /app/data
+          name: mealie-data
       restartPolicy: Always
-      volumes:
-        - name: mealie-data
-          persistentVolumeClaim:
-            claimName: mealie-data
+    volumes:
+    - name: mealie-data
+      persistentVolumeClaim:
+        claimName: mealie-data
