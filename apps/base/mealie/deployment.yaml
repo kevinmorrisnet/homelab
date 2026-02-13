@@ -21,9 +21,9 @@ spec:
         image: ghcr.io/mealie-recipes/mealie:v3.10.2
         envFrom:
         - configMapRef:
-          name: mealie-configmap
+            name: mealie-configmap
         - secretRef:
-          name: mealie-container-env
+            name: mealie-container-env
         ports:
         - containerPort: 9000
           protocol: TCP
