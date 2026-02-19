@@ -16,26 +16,20 @@ spec:
         fsGroup: 33
         runAsUser: 33
         runAsGroup: 33
-
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.45.0
           ports:
-            - containerPort: 9090
-
+          - containerPort: 9090
           envFrom:
-          # - configMapRef:
-          #      name: linkding-configmap
-            - secretRef:
-                name: linkding-container-env
-
+          - secretRef:
+              name: linkding-container-env
           securityContext:
             allowPrivilegeEscalation: false
-
           volumeMounts:
-            - name: linkding-data
-              mountPath: /etc/linkding/data
+          - name: linkding-data
+            mountPath: /etc/linkding/data
       volumes:
-        - name: linkding-data
-          persistentVolumeClaim:
-            claimName: linkding-data-pvc
+      - name: linkding-data
+        persistentVolumeClaim:
+          claimName: linkding-data-pvc

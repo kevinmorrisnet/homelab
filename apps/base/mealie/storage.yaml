@@ -4,7 +4,7 @@ metadata:
   name: mealie-data
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi
