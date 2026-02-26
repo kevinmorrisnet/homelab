@@ -11,17 +11,16 @@ spec:
       template:
         spec:
           containers:
-            - name: renovate
-              image: renovate/renovate:latest
-              args:
-                - kevinmorrisnet/homelab
-              env:
-                - name: LOG_LEVEL
-                  value: debug
-              envFrom:
-                - secretRef:
-                    name: renovate-container-env
-                - configMapRef:
-                    name: renovate-configmap
-
+          - name: renovate
+            image: renovate/renovate:latest
+            args:
+            - kevinmorrisnet/homelab
+            env:
+            - name: LOG_LEVEL
+              value: debug
+            envFrom:
+            - secretRef:
+                name: renovate-container-env
+            - configMapRef:
+                name: renovate-configmap
           restartPolicy: Never
