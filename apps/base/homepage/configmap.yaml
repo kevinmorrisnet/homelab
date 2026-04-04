@@ -22,6 +22,16 @@ data:
             icon: calude-ai.png
         - Github:
             href: https://github.com/
+        
+        - Kubernetes:
+            href: http://kubernetes.io/docs/home
+            icon: kubernetes.png
+            description: Kubernetes
+
+        - Skool:
+            href: https://www.skool.com/kubecraft/classroom
+            icon: google-scholar.png
+            description: Skool
   services.yaml: |
     - Homelab:
 
@@ -53,16 +63,6 @@ data:
             icon: x.png
             description: X
 
-    - Learning:
-        - Kubernetes:
-            href: http://kubernetes.io/docs/home
-            icon: kubernetes.png
-            description: Kubernetes
-
-        - Skool:
-            href: https://www.skool.com/kubecraft/classroom
-            icon: google-scholar.png
-            description: Skool
 
     - Consuming:
         - Hacker News:
@@ -79,6 +79,11 @@ data:
             href: http://audiobooks.kevin-morris.net
             icon: audiobookshelf.png
             description: Audiobookshelf
+        
+        - Calibre:
+            href: http://your.calibreweb.host:8080
+            icon: calibre.png
+            description: Calibre
   
   widgets.yaml: |
     - kubernetes:
