@@ -16,10 +16,15 @@ data:
   custom.css: ""
   custom.js: ""
   bookmarks.yaml: |
-    - Developer:
+    - Tools:
+
         - Github:
-            - abbr: GH
+            - icon: github.png
               href: https://github.com/
+        - Claude:
+            - icon: claude-ai.png
+              href: https://claudeai.new/
+
     - Learning:
         - Kubernetes:
             - href: http://kubernetes.io/docs/home
@@ -74,7 +79,7 @@ data:
             description: Audiobookshelf
         
         - Calibre:
-            href: http://your.calibreweb.host:8080
+            href: http://192.168.1.200:8080
             icon: calibre.png
             description: Calibre
   
