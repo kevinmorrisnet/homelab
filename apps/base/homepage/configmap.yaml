@@ -23,12 +23,17 @@ data:
               href: https://github.com/
         - Claude:
             - icon: claude-ai.png
-              href: https://claudeai.new/
+              href: https://claude.ai
 
     - Learning:
         - Kubernetes:
             - href: http://kubernetes.io/docs/home
               icon: kubernetes.png
+        - Skool:
+            - https://www.skool.com/kubecraft/classroom
+              icon: google-scholar.png
+              description: Skool
+
 
   services.yaml: |
     - Homelab:
