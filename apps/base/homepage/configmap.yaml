@@ -16,10 +16,13 @@ data:
   custom.css: ""
   custom.js: ""
   bookmarks.yaml: |
-    - Developer:
+    - Tools:
         - Github:
-            - abbr: GH
-              href: https://github.com/
+            href: https://github.com/
+        - Kubernetes:
+            href: http://kubernetes.io/docs/home
+            icon: kubernetes.png
+            description: Kubernetes
   services.yaml: |
     - Homelab:
         - Mealie:
@@ -65,11 +68,7 @@ data:
             icon: x.png
             description: X
 
-    - Learning:
-        - Kubernetes:
-            href: http://kubernetes.io/docs/home
-            icon: kubernetes.png
-            description: Kubernetes
+    - Consume:
 
         - Skool:
             href: https://www.skool.com/kubecraft/classroom
