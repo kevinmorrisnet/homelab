@@ -16,45 +16,33 @@ data:
   custom.css: ""
   custom.js: ""
   bookmarks.yaml: |
-    - Developer:
+    - Tools:
+        - Claude:
+            href: https://claude.ai/new
+            icon: calude-ai.png
         - Github:
-            - abbr: GH
-              href: https://github.com/
+            href: https://github.com/
   services.yaml: |
     - Homelab:
-        - Mealie:
-            href: http://mealie.kevin-morris.net
-            icon: mealie.png
-            description: Recipes
 
         - Grafana:
             href: http://grafana.kevin-morris.net
             icon: grafana.png
             description: Monitoring
+    - Apps:
+
+        - Mealie:
+            href: http://mealie.kevin-morris.net
+            icon: mealie.png
+            description: Recipes
 
         - Linkding:
             href: http://linkding.kevin-morris.net
             icon: linkding.png
             description: Bookmarks
-        
-        - Audiobookshelf:
-            href: http://audiobooks.kevin-morris.net
-            icon: audiobookshelf.png
-            description: Audiobookshelf
-
-    - Consuming:
-        - Hacker News:
-            href: https://news.ycombinator.com
-            icon: hacker-news.png
-            description: Hacker News
-
-        - YouTube:
-            href: https://www.youtube.com/
-            icon: youtube.png
-            description: YouTube
-
 
     - Creating:
+
         - LinkedIn:
             href: https://www.linkedin.com/feed/
             icon: linkedin.png
@@ -76,6 +64,22 @@ data:
             icon: google-scholar.png
             description: Skool
 
+    - Consuming:
+        - Hacker News:
+            href: https://news.ycombinator.com
+            icon: hacker-news.png
+            description: Hacker News
+
+        - YouTube:
+            href: https://www.youtube.com/
+            icon: youtube.png
+            description: YouTube
+        
+        - Audiobookshelf:
+            href: http://audiobooks.kevin-morris.net
+            icon: audiobookshelf.png
+            description: Audiobookshelf
+  
   widgets.yaml: |
     - kubernetes:
         cluster:
