@@ -17,20 +17,13 @@ data:
   custom.js: ""
   bookmarks.yaml: |
     - Tools:
-
-        - Claude:
-            href: https://claude.ai/new
-            icon: claude-ai.png
-
         - Github:
             href: https://github.com/
     - Learning:
-
         - Kubernetes:
             href: http://kubernetes.io/docs/home
             icon: kubernetes.png
             description: Kubernetes
-
         - Skool:
             href: https://www.skool.com/kubecraft/classroom
             icon: google-scholar.png
