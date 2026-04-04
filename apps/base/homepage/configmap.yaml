@@ -66,6 +66,12 @@ data:
             icon: x.png
             description: X
 
+        - Blog:
+            href: https://kevin-morris.n.com/home
+            icon: kubernetes.png
+            description: Blog
+
+
 
     - Consuming:
         - Hacker News:
