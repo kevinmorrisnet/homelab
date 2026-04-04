@@ -17,12 +17,15 @@ data:
   custom.js: ""
   bookmarks.yaml: |
     - Tools:
+
         - Claude:
             href: https://claude.ai/new
-            icon: calude-ai.png
+            icon: claude-ai.png
+
         - Github:
             href: https://github.com/
-        
+    - Learning:
+
         - Kubernetes:
             href: http://kubernetes.io/docs/home
             icon: kubernetes.png
@@ -32,6 +35,7 @@ data:
             href: https://www.skool.com/kubecraft/classroom
             icon: google-scholar.png
             description: Skool
+
   services.yaml: |
     - Homelab:
 
