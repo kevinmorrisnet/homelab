@@ -13,13 +13,13 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: "kevinhomepage.net"
-      http:
-        paths:
-          - path: "/"
-            pathType: Prefix
-            backend:
-              service:
-                name: homepage
-                port:
-                  number: 3000
+  - host: "kevinhomepage.net"
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: homepage
+            port:
+              number: 3000
