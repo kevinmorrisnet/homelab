@@ -1,0 +1,10 @@
+    - Learning:
+        - Kubernetes:
+            href: http://kubernetes.io/docs/home
+            icon: kubernetes.png
+            description: Kubernetes
+        - Skool:
+            href: https://www.skool.com/kubecraft/classroom
+            icon: google-scholar.png
+            description: Skool
+
