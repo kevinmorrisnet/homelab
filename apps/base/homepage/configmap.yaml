@@ -67,7 +67,7 @@ data:
             description: X
 
         - Blog:
-            href: https://kevin-morris.n.com/home
+            href: https://kevin-morris.net
             icon: kubernetes.png
             description: Blog
 
