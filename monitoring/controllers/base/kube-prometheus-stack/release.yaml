@@ -33,6 +33,10 @@ spec:
   values:
     grafana:
       adminPassword: kevin
+      grafana.ini:
+        auth.anonymous:
+          enabled: true
+          org_role: Viewer
       ingress:
         ## If true, Grafana Ingress will be created
         ##
