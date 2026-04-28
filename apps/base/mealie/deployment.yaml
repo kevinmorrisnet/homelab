@@ -35,5 +35,3 @@ spec:
       - name: mealie-data
         persistentVolumeClaim:
           claimName: mealie-data
-# test github actions
-# again
