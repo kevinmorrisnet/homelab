@@ -1,0 +1,49 @@
+name: Update README Versions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/base/**/deployment.yaml'
+      - 'monitoring/**'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract versions and update README
+        run: |
+          # Audiobookshelf
+          ABS=$(grep -r 'ghcr.io/advplyr/audiobookshelf:' apps/base/ | grep -oP '(?<=:)\S+' | head -1)
+
+          # Homepage (strip leading 'v')
+          HOMEPAGE=$(grep -r 'ghcr.io/gethomepage/homepage:' apps/base/ | grep -oP '(?<=:)\S+' | head -1 | sed 's/^v//')
+
+          # Mealie (strip leading 'v')
+          MEALIE=$(grep -r 'ghcr.io/mealie-recipes/mealie:' apps/base/ | grep -oP '(?<=:)\S+' | head -1 | sed 's/^v//')
+
+          # Linkding
+          LINKDING=$(grep -r 'sissbruecker/linkding:' apps/base/ | grep -oP '(?<=:)\S+' | head -1)
+
+          # Grafana (kube-prometheus-stack chart version)
+          GRAFANA=$(grep -r 'version:' monitoring/ | grep -oP '(?<=version: ")[^"]+' | head -1)
+
+          echo "ABS=$ABS HOMEPAGE=$HOMEPAGE MEALIE=$MEALIE LINKDING=$LINKDING GRAFANA=$GRAFANA"
+
+          # Update README table rows in-place
+          sed -i "s/| Audiobookshelf | .* | audiobooks/| Audiobookshelf | $ABS | audiobooks/" README.md
+          sed -i "s/| Homepage | .* | kevinhomepage/| Homepage | $HOMEPAGE | kevinhomepage/" README.md
+          sed -i "s/| Linkding | .* | linkding/| Linkding | $LINKDING | linkding/" README.md
+          sed -i "s/| Mealie | .* | mealie/| Mealie | $MEALIE | mealie/" README.md
+          sed -i "s/| Grafana | .* | grafana/| Grafana | (kube-prometheus-stack $GRAFANA) | grafana/" README.md
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet && echo "No changes" && exit 0
+          git add README.md
+          git commit -m "chore: update README app versions"
+          git push
