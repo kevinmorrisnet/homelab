@@ -30,7 +30,7 @@ jobs:
           LINKDING=$(grep -r 'sissbruecker/linkding:' apps/base/ | grep -oP '(?<=:)\S+' | head -1)
 
           # Grafana (kube-prometheus-stack chart version)
-          GRAFANA=$(grep -r 'version:' monitoring/ | grep -oP '(?<=version: ")[^"]+' | head -1)
+          GRAFANA=$(grep -r 'version:' monitoring/ | grep -oP '(?<=version: )\S+' | head -1)
 
           echo "ABS=$ABS HOMEPAGE=$HOMEPAGE MEALIE=$MEALIE LINKDING=$LINKDING GRAFANA=$GRAFANA"
 
