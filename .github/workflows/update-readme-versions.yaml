@@ -39,7 +39,7 @@ jobs:
           sed -i "s/| Homepage | .* | kevinhomepage/| Homepage | $HOMEPAGE | kevinhomepage/" README.md
           sed -i "s/| Linkding | .* | linkding/| Linkding | $LINKDING | linkding/" README.md
           sed -i "s/| Mealie | .* | mealie/| Mealie | $MEALIE | mealie/" README.md
-          sed -i "s/| Grafana | .* | grafana/| Grafana | (kube-prometheus-stack $GRAFANA) | grafana/" README.md
+          sed -i "s/| Grafana | .* | grafana/| Grafana | $GRAFANA (kube-prometheus-stack) | grafana/" README.md
 
       - name: Commit if changed
         run: |
