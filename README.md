@@ -40,7 +40,7 @@ automated dependency updates, and external access via Cloudflare tunnels.
 | Homepage | 1.12.3 | kevinhomepage.net | Personal dashboard |
 | Linkding | 1.45.0 | linkding.kevin-morris.net | Bookmark manager |
 | Mealie | 3.16.0 | mealie.kevin-morris.net | Recipe manager |
-| Grafana | (kube-prometheus-stack 79.0.0) | grafana.kevin-morris.net | Cluster monitoring |
+| Grafana | (kube-prometheus-stack 81.2.2) | grafana.kevin-morris.net | Cluster monitoring |
 
 ---
 
