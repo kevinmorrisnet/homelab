@@ -1,5 +1,5 @@
 helm upgrade kube-prometheus-stack prometheus-community/kube-prometheus-stack \
   -n monitoring \
   --set prometheus.prometheusSpec.storageSpec.existingClaim=prometheus-data \
-  --set alertmanager.alertmanagerSpec.storage.existingClaim=prometheus-data \
-  --set grafana.persistence.existingClaim=prometheus-data
+  --set alertmanager.alertmanagerSpec.storage.existingClaim=alertmanager-data \
+  --set grafana.persistence.existingClaim=grafana-data
