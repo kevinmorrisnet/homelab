@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-pv-prometheus
+spec:
+  capacity:
+    storage: 50Gi
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  nfs:
+    server: 192.168.1.50
+    path: /volume1/pvs/prometheus-data
+
