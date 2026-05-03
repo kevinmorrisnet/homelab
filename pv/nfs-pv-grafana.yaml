@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: nfs-pv-prometheus
+  name: nfs-pv-grafana
 spec:
   capacity:
     storage: 10Gi
@@ -11,5 +11,4 @@ spec:
   storageClassName: local-storage
   nfs:
     server: 192.168.1.50
-    path: /volume1/pvs/prometheus-data
-
+    path: /volume1/pvs/grafana-data
