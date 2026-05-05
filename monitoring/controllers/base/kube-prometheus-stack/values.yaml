@@ -24,3 +24,5 @@ grafana:
   persistence:
     enabled: true
     existingClaim: grafana-data
+  initChownData:
+    enabled: false

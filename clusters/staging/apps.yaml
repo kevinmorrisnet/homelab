@@ -12,6 +12,7 @@ spec:
     name: flux-system
   path: ./apps/staging
   prune: true
+  force: true
   decryption:
     provider: sops
     secretRef:
