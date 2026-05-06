@@ -5,4 +5,7 @@ resources:
   - deployment.yaml
   - namespace.yaml
   - service.yaml
-  - storage.yaml
+# - storage.yaml
+# - pvc-config.yaml
+# - pvc-metadata.yaml
+  - pvc-audiobooks.yaml
