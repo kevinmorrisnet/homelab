@@ -6,6 +6,6 @@ resources:
   - namespace.yaml
   - service.yaml
 # - storage.yaml
-# - pvc-config.yaml
-# - pvc-metadata.yaml
+  - pvc-config.yaml
+  - pvc-metadata.yaml
   - pvc-audiobooks.yaml
