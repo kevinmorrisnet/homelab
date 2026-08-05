@@ -54,6 +54,11 @@ data:
             icon: linkding.png
             description: Bookmarks
 
+        - Audiobookshelf:
+            href: http://audiobooks.kevin-morris.net
+            icon: audiobookshelf.png
+            description: Audiobookshelf
+
     - Creating:
 
         - LinkedIn:
