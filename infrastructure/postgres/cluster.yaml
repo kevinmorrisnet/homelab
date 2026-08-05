@@ -1,0 +1,16 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgres-cluster
+  namespace: postgres
+spec:
+  instances: 1
+  storage:
+    size: 10Gi
+    storageClass: local-storage
+  bootstrap:
+    initdb:
+      database: app
+      owner: app
+  monitoring:
+    enablePodMonitor: true
