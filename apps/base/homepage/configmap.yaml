@@ -13,28 +13,18 @@ data:
   settings.yaml: |
     theme: dark # or light
     color: zinc
+    layout:
+      Homelab:
+        style: column
+      Apps:
+        style: column
+      Creating:
+        style: column
+      Consuming:
+        style: column
   custom.css: ""
   custom.js: ""
   bookmarks.yaml: |
-    - Tools:
-
-        - Github:
-            - icon: github.png
-              href: https://github.com/
-        - Claude:
-            - icon: claude-ai.png
-              href: https://claude.ai
-
-    - Learning:
-        - Kubernetes:
-            - href: http://kubernetes.io/docs/home
-              icon: kubernetes.png
-        - Skool:
-            - href: https://www.skool.com/kubecraft/classroom
-              icon: google-scholar.png
-              description: Skool
-
-
   services.yaml: |
     - Homelab:
 
@@ -89,10 +79,10 @@ data:
             icon: youtube.png
             description: YouTube
         
-        - Audiobookshelf:
-            href: http://audiobooks.kevin-morris.net
-            icon: audiobookshelf.png
-            description: Audiobookshelf
+        - Commafeed:
+            href: http://commafeed.kevin-morris.net
+            icon: commafeed.png
+            description: Commafeed
         
         - Calibre:
             href: http://192.168.1.200:8080
@@ -117,13 +107,15 @@ data:
         expanded: true
         cpu: true
         memory: true
+        disk: /
         cputemp: true
         network: default
-        #tempmin: 0 # optional, minimum cpu temp
-        #tempmax: 100 # optional, maximum cpu temp
+        tempmin: 0 # optional, minimum cpu temp
+        tempmax: 100 # optional, maximum cpu temp
         uptime: true
         units: metric # only used by cpu temp, options: 'imperial' or 'metric'
         refresh: 3000 # optional, in ms
+        diskUnits: bytes
     - openmeteo:
         label: Morrisville # optional
         latitude: 35.8235

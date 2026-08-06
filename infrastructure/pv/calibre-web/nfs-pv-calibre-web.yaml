@@ -1,0 +1,55 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: calibre-web-config-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  mountOptions:
+    - nolock
+  nfs:
+    server: 192.168.1.50
+    path: /volume1/pvs/calibre-web/config
+  claimRef:
+    namespace: calibre-web
+    name: calibre-web-config-pvc
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: calibre-web-library-pv
+spec:
+  capacity:
+    storage: 50Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  nfs:
+    server: 192.168.1.50
+    path: /volume1/pvs/calibre-web/library
+  claimRef:
+    namespace: calibre-web
+    name: calibre-web-library-pvc
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: calibre-web-ingest-pv
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  nfs:
+    server: 192.168.1.50
+    path: /volume1/pvs/calibre-web/ingest
+  claimRef:
+    namespace: calibre-web
+    name: calibre-web-ingest-pvc
