@@ -85,7 +85,7 @@ data:
             description: Commafeed
         
         - Calibre:
-            href: http://192.168.1.200:8080
+            href: http://192.168.1.202:8083
             icon: calibre.png
             description: Calibre
   
