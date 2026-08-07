@@ -18,9 +18,9 @@ spec:
           image: crocodilestick/calibre-web-automated:latest 
           env:
             - name: PUID
-              value: "1000"
+              value: "1001"
             - name: PGID
-              value: "1000"
+              value: "10"
             - name: TZ
               value: "America/New_York"
           ports:
