@@ -49,6 +49,11 @@ data:
             icon: audiobookshelf.png
             description: Audiobookshelf
 
+        - Calibre:
+            href: http://192.168.1.202:8083
+            icon: calibre.png
+            description: Calibre
+
     - Creating:
 
         - LinkedIn:
@@ -66,8 +71,6 @@ data:
             icon: kubernetes.png
             description: Blog
 
-
-
     - Consuming:
         - Hacker News:
             href: https://news.ycombinator.com
@@ -78,17 +81,12 @@ data:
             href: https://www.youtube.com/
             icon: youtube.png
             description: YouTube
-        
+
         - Commafeed:
             href: http://commafeed.kevin-morris.net
             icon: commafeed.png
             description: Commafeed
-        
-        - Calibre:
-            href: http://192.168.1.202:8083
-            icon: calibre.png
-            description: Calibre
-  
+
   widgets.yaml: |
     - kubernetes:
         cluster:
