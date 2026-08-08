@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: nfs-pv-mealie
+  name: nfs-pv-homepage
 spec:
   capacity:
-    storage: 2Gi
+    storage: 1Gi
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
