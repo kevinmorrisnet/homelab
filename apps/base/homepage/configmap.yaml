@@ -12,7 +12,7 @@ data:
     gateway: true # enable gateway-api
   settings.yaml: |
     title: Homepage*
-    background: /app/data/test.jpg
+    background: /app/public/images/homepage.jpg
     headerStyle: boxed
     theme: dark # or light
     color: zinc
