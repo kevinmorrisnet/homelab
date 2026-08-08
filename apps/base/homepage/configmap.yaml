@@ -12,9 +12,15 @@ data:
     gateway: true # enable gateway-api
   settings.yaml: |
     title: Homepage
-    # background: /images/homepage.jpg
+    background:
+        image: /images/3.jpg
+        blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+    background:
+        saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+        brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+        opacity: 50 # 0-100
     headerStyle: clean
-    # color: slate
+    color: stone
     theme: dark # or light
     layout:
       Homelab:
