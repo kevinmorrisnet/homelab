@@ -11,6 +11,9 @@ data:
     traefik: true # enable traefik ingressRoute
     gateway: true # enable gateway-api
   settings.yaml: |
+    title: My Awesome Homepage
+    background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
+    headerStyle: boxed
     theme: dark # or light
     color: zinc
     layout:
@@ -27,13 +30,12 @@ data:
   bookmarks.yaml: |
   services.yaml: |
     - Homelab:
-
         - Grafana:
             href: http://grafana.kevin-morris.net
             icon: grafana.png
             description: Monitoring
-    - Apps:
 
+    - Apps:
         - Mealie:
             href: http://mealie.kevin-morris.net
             icon: mealie.png
@@ -55,7 +57,6 @@ data:
             description: Calibre
 
     - Creating:
-
         - LinkedIn:
             href: https://www.linkedin.com/feed/
             icon: linkedin.png
