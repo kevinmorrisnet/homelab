@@ -11,8 +11,8 @@ data:
     traefik: true # enable traefik ingressRoute
     gateway: true # enable gateway-api
   settings.yaml: |
-    title: HomepageX
-    background: /app/data/homepage.jpg
+    title: Homepage*
+    background: /app/data/test.jpg
     headerStyle: boxed
     theme: dark # or light
     color: zinc
