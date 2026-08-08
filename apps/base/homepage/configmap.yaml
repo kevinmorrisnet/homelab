@@ -11,11 +11,11 @@ data:
     traefik: true # enable traefik ingressRoute
     gateway: true # enable gateway-api
   settings.yaml: |
-    title: Homepage*
-    background: /images/homepage.jpg
-    headerStyle: boxed
+    title: Homepage
+    # background: /images/homepage.jpg
+    headerStyle: clean
+    # color: slate
     theme: dark # or light
-    color: zinc
     layout:
       Homelab:
         style: column
