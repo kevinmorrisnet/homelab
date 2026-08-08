@@ -11,4 +11,4 @@ spec:
   storageClassName: local-storage
   nfs:
     server: 192.168.1.50
-    path: /volume1/pvs/homepage-data
+    path: /volume1/pvs/homepage

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: homepage-data
+  name: homepage
 spec:
   accessModes:
   - ReadWriteOnce
