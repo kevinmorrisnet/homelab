@@ -6,4 +6,4 @@ resources:
   - mealie
   - commafeed
   - homepage
- # - pgadmin
+  - pgadmin
