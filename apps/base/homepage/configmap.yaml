@@ -41,6 +41,11 @@ data:
             icon: grafana.png
             description: Monitoring
 
+        - Pgadmin:
+            href: 192.168.1.203
+            icon: pgadmin.png
+            description: Database
+
     - Apps:
         - Mealie:
             href: http://mealie.kevin-morris.net
