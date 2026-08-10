@@ -83,10 +83,10 @@ data:
             description: Blog
 
     - Consuming:
-        - Hacker News:
-            href: https://news.ycombinator.com
-            icon: hacker-news.png
-            description: Hacker News
+        - Wallabag:
+            href: http://192.168.1.204
+            icon: wallabag.png
+            description: Wallabag
 
         - YouTube:
             href: https://www.youtube.com/
