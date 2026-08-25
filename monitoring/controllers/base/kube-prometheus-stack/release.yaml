@@ -30,12 +30,13 @@ spec:
       - paths: ["/metadata/annotations/prometheus-operator-validated"]
         target:
           kind: PrometheusRule
+  valuesFrom:
+    - kind: Secret
+      name: grafana-admin-secret
+      valuesKey: admin-password
+      targetPath: grafana.adminPassword
   values:
     grafana:
-      admin:
-        existingSecret: grafana-admin-secret
-        userKey: admin-user
-        passwordKey: admin-password
       grafana.ini:
         auth.anonymous:
           enabled: true
