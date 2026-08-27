@@ -29,17 +29,10 @@ spec:
               secretKeyRef:
                 name: pgadmin-secret
                 key: PGADMIN_DEFAULT_PASSWORD
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: pgadmin-service
-  namespace: pgadmin
-spec:
-  selector:
-    app: pgadmin
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: LoadBalancer
+          volumeMounts:
+          - name: pgadmin-storage
+            mountPath: /var/lib/pgadmin
+      volumes:
+      - name: pgadmin-storage
+        persistentVolumeClaim:
+          claimName: pgadmin-pvc
