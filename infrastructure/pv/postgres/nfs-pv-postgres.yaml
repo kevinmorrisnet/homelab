@@ -11,7 +11,7 @@ spec:
   storageClassName: local-storage
   nfs:
     server: 192.168.1.50
-    path: /volume1/pvs/postgres-cluster
+    path: /volume1/postgres
   claimRef:
     namespace: postgres
     name: postgres-cluster-1
