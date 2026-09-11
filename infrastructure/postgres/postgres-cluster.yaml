@@ -4,7 +4,7 @@ metadata:
   name: postgres-cluster
   namespace: postgres
 spec:
-  instances: 1
+  instances: 3
   enableSuperuserAccess: true
   storage:
     size: 10Gi
