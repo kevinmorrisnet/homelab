@@ -45,6 +45,11 @@ data:
             icon: pgadmin.png
             description: Database
 
+        - ArgoCD:
+            href: http://192.168.1.206
+            icon: argocd.png
+            description: CD
+
     - Apps:
         - Mealie:
             href: http://mealie.kevin-morris.net
