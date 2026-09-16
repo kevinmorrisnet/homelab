@@ -39,7 +39,7 @@ automated dependency updates, and external access via Cloudflare tunnels.
 | Audiobookshelf | 2.36.0 | audiobooks.kevin-morris.net | Audiobook library |
 | Homepage | 2.3.0 | kevinhomepage.net | Personal dashboard |
 | Linkding | 1.46.2 | linkding.kevin-morris.net | Bookmark manager |
-| Mealie | 3.25.1 | mealie.kevin-morris.net | Recipe manager |
+| Mealie | 3.26.0 | mealie.kevin-morris.net | Recipe manager |
 | Grafana | 81.2.2 (kube-prometheus-stack) | grafana.kevin-morris.net | Cluster monitoring |
 
 ---
