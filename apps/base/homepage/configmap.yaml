@@ -41,12 +41,12 @@ data:
             description: Monitoring
 
         - Pgadmin:
-            href: http://192.168.1.203
+            href: http://192.168.1.243
             icon: pgadmin.png
             description: Database
 
         - ArgoCD:
-            href: http://192.168.1.206
+            href: http://192.168.1.246
             icon: argo-cd.png
             description: CD
 
@@ -67,7 +67,7 @@ data:
             description: Audiobookshelf
 
         - Calibre:
-            href: http://192.168.1.202:8083
+            href: http://192.168.1.242:8083
             icon: calibre.png
             description: Calibre
 
@@ -89,7 +89,7 @@ data:
 
     - Consuming:
         - Wallabag:
-            href: http://192.168.1.204
+            href: http://192.168.1.244
             icon: wallabag.png
             description: Wallabag
 
@@ -134,7 +134,7 @@ data:
         label: Morrisville # optional
         latitude: 35.8235
         longitude: -78.8256
-        timezone: Europe/Kiev # optional
+        timezone: America/NewYork # optional
         units: imperial # or metric
         cache: 5 # Time in minutes to cache API responses, to stay within limits
         format: # optional, Intl.NumberFormat options
