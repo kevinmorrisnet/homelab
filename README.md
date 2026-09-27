@@ -36,7 +36,7 @@ automated dependency updates, and external access via Cloudflare tunnels.
 
 | App | Version | URL | Description |
 |-----|---------|-----|-------------|
-| Audiobookshelf | 2.36.0 | audiobooks.kevin-morris.net | Audiobook library |
+| Audiobookshelf | 2.36.1 | audiobooks.kevin-morris.net | Audiobook library |
 | Homepage | 2.3.0 | kevinhomepage.net | Personal dashboard |
 | Linkding | 1.47.0 | linkding.kevin-morris.net | Bookmark manager |
 | Mealie | 3.28.0 | mealie.kevin-morris.net | Recipe manager |
