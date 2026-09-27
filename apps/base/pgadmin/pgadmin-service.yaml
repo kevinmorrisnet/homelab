@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: pgadmin-service
   namespace: pgadmin
+  annotations:
+    metallb.io/loadBalancerIPs: 192.168.1.243
 spec:
   selector:
     app: pgadmin

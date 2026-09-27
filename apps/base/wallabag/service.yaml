@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: wallabag
   namespace: wallabag
+  annotations:
+    metallb.io/loadBalancerIPs: 192.168.1.244
 spec:
   type: LoadBalancer
-  loadBalancerIP: 192.168.1.204
   selector:
     app: wallabag
   ports:
