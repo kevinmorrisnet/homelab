@@ -37,30 +37,47 @@ spec:
       targetPath: grafana.adminPassword
   values:
     grafana:
+      persistence:
+        enabled: true
+        existingClaim: grafana-data
+      initChownData:
+        enabled: false
       grafana.ini:
         auth.anonymous:
           enabled: true
           org_role: Viewer
       ingress:
-        ## If true, Grafana Ingress will be created
-        ##
         enabled: true
-
-        ## IngressClassName for Grafana Ingress.
-        ## Should be provided if Ingress is enable.
-        ##
         ingressClassName: traefik
-
-        ## Hostnames.
-        ## Must be provided if Ingress is enable.
-        ##
         hosts:
           - grafana.kevin-morris.net
-
-        ## TLS configuration for grafana Ingress
-        ## Secret must be manually created in the namespace
-        ##
         tls:
           - secretName: grafana-tls-secret
             hosts:
               - grafana.kevin-morris.net
+
+    prometheus:
+      prometheusSpec:
+        storageSpec:
+          volumeClaimTemplate:
+            metadata:
+              name: prometheus-kube-prometheus-stack-prometheus-db
+            spec:
+              storageClassName: local-storage
+              accessModes: ["ReadWriteOnce"]
+              resources:
+                requests:
+                  storage: 10Gi
+
+    alertmanager:
+      alertmanagerSpec:
+        storage:
+          volumeClaimTemplate:
+            metadata:
+              name: alertmanager-kube-prometheus-stack-alertmanager-db
+            spec:
+              storageClassName: local-storage
+              accessModes: ["ReadWriteOnce"]
+              resources:
+                requests:
+                  storage: 10Gi
