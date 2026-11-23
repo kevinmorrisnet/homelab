@@ -57,6 +57,8 @@ spec:
               - grafana.kevin-morris.net
 
     prometheus:
+      service:
+        type: LoadBalancer
       prometheusSpec:
         retention: 90d
         retentionSize: 40GB
