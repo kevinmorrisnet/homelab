@@ -40,6 +40,11 @@ data:
             icon: grafana.png
             description: Monitoring
 
+        - Prometheus:
+            href: http://192.168.1.240:9090/query
+            icon: prometheus.png
+            description: Metrics
+
         - Pgadmin:
             href: http://192.168.1.243
             icon: pgadmin.png
@@ -48,7 +53,7 @@ data:
         - ArgoCD:
             href: http://192.168.1.246
             icon: argo-cd.png
-            description: CD
+            description: Gitops
 
     - Apps:
         - Mealie:
